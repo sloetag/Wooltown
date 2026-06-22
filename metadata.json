@@ -1,0 +1,6 @@
+{
+  "name": "Modern E-Commerce Storefront",
+  "description": "A production-ready e-commerce storefront featuring GSAP, Framer Motion, and Zustand.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

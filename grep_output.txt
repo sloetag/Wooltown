@@ -1,0 +1,117 @@
+./src/components/ui/Button.tsx:29:        className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+./src/components/ui/ProductCard.tsx:20:    <Link to={`/product/${product.id}`} className="group block h-full select-none">
+./src/components/ui/ProductCard.tsx:34:            className={`absolute top-4 left-4 p-2 bg-white/90 backdrop-blur-sm rounded-full opacity-0 group-hover:opacity-100 transition-all duration-300 shadow-sm border ${isWishlisted ? 'border-rose-200 text-rose-500 opacity-100' : 'border-slate-100 text-slate-400 hover:text-slate-700'} z-10 focus:outline-none focus:ring-0 active:scale-95`}
+./src/components/profile/OrderTracker.tsx:48:    name: `${destinationCity} Final Node`,
+./src/components/profile/OrderTracker.tsx:51:    info: `Deliverable destination terminal: ${shippingAddress}`
+./src/components/profile/OrderTracker.tsx:59:  let routePathDescription = `M ${originNode.x} ${originNode.y} Q ${(originNode.x + intermediateNode1.x)/2} ${(originNode.y + intermediateNode1.y)/2 - 30} ${intermediateNode1.x} ${intermediateNode1.y} T ${intermediateNode2.x} ${intermediateNode2.y} T ${destNode.x} ${destNode.y}`;
+./src/components/profile/OrderTracker.tsx:124:        time: status === 'DELIVERED' ? deliveredTime : `Est: ${estDeliveryStr}`, 
+./src/components/profile/OrderTracker.tsx:158:            className={`px-3 py-1 border transition-all flex items-center gap-1.5 focus:outline-none ${mapLayer === 'routes' ? 'bg-slate-950 text-white border-slate-950 font-bold' : 'bg-transparent text-slate-500 border-slate-200 hover:border-slate-400'}`}
+./src/components/profile/OrderTracker.tsx:165:            className={`px-3 py-1 border transition-all flex items-center gap-1.5 focus:outline-none ${isSimulationActive ? 'bg-amber-50/60 border-amber-200 text-[#705030] font-bold' : 'bg-transparent text-slate-400 border-slate-100'}`}
+./src/components/profile/OrderTracker.tsx:167:            <span className={`w-1.5 h-1.5 rounded-full ${isSimulationActive ? 'bg-amber-600 animate-ping' : 'bg-slate-300'}`} />
+./src/components/profile/OrderTracker.tsx:255:                  key={`pulse-${idx}`}
+./src/components/profile/OrderTracker.tsx:303:              <g transform={`translate(${activeTruckCoords.x - 12}, ${activeTruckCoords.y - 12})`} className="filter drop-shadow-md">
+./src/components/profile/OrderTracker.tsx:365:              <span className={`absolute -left-5 top-0.5 w-4 h-4 rounded-full border flex items-center justify-center ${order.status !== 'PENDING' ? 'border-[#705030] bg-white' : 'border-slate-200 bg-slate-50'}`}>
+./src/components/profile/OrderTracker.tsx:374:                  <h5 className={`font-sans text-xs font-bold uppercase tracking-wider ${order.status !== 'PENDING' ? 'text-slate-900' : 'text-slate-400'}`}>
+./src/components/profile/OrderTracker.tsx:377:                  <span className={`font-mono text-[10px] ${order.status !== 'PENDING' ? 'text-slate-600' : 'text-slate-300'}`}>
+./src/components/profile/OrderTracker.tsx:392:              <span className={`absolute -left-5 top-0.5 w-4 h-4 rounded-full border flex items-center justify-center ${(order.status === 'SHIPPED' || order.status === 'DELIVERED') ? 'border-[#705030] bg-white' : 'border-slate-200 bg-slate-50'}`}>
+./src/components/profile/OrderTracker.tsx:401:                  <h5 className={`font-sans text-xs font-bold uppercase tracking-wider ${(order.status === 'SHIPPED' || order.status === 'DELIVERED') ? 'text-slate-900' : 'text-slate-400'}`}>
+./src/components/profile/OrderTracker.tsx:404:                  <span className={`font-mono text-[10px] ${(order.status === 'SHIPPED' || order.status === 'DELIVERED') ? 'text-slate-600' : 'text-slate-300'}`}>
+./src/components/profile/OrderTracker.tsx:420:              <span className={`absolute -left-5 top-0.5 w-4 h-4 rounded-full border flex items-center justify-center ${order.status === 'DELIVERED' ? 'border-emerald-600 bg-white' : 'border-slate-200 bg-slate-50'}`}>
+./src/components/profile/OrderTracker.tsx:429:                  <h5 className={`font-sans text-xs font-bold uppercase tracking-wider ${order.status === 'DELIVERED' ? 'text-emerald-700 flex items-center gap-1 font-extrabold' : 'text-slate-400'}`}>
+./src/components/profile/OrderTracker.tsx:433:                  <span className={`font-mono text-[10px] ${order.status === 'DELIVERED' ? 'text-emerald-750 font-bold' : 'text-slate-350 bg-slate-100/50 px-1 py-0.5 rounded-xs'}`}>
+./src/components/layout/Footer.tsx:90:          <form noValidate className={`flex border rounded-sm overflow-hidden transition-colors ${emailError ? 'border-rose-500' : 'border-slate-800 focus-within:border-slate-500'}`} onSubmit={handleSubscribe}>
+./src/components/layout/Navbar.tsx:44:      let sub = `SECURELY REGISTERED AS ${user.name.toUpperCase()}`;
+./src/components/layout/Navbar.tsx:48:        sub = `VERIFIED TO PROFILE: ${user.name.toUpperCase()}`;
+./src/components/layout/Navbar.tsx:51:        sub = `CREATION OF ${user.name.toUpperCase()} INTEGRITY PROFILE SUCCESSFUL`;
+./src/components/layout/Navbar.tsx:54:        sub = `DISPATCH GATEWAY AUTHORIZED FOR ${user.name.toUpperCase()}`;
+./src/components/layout/Navbar.tsx:93:      navigate(`/shop?q=${encodeURIComponent(searchQuery.trim())}`);
+./src/components/layout/Navbar.tsx:177:          <span>Complimentary dispatch &amp; 10% discount on all orders over $1,000 USD. Auto-applied on checkout. <Link to="/shop" className="underline hover:text-amber-350">Shop now</Link></span>
+./src/components/layout/Navbar.tsx:184:      <nav className={`fixed left-0 right-0 z-30 transition-all duration-300 ${isBannerVisible ? 'top-9' : 'top-0'} bg-white/95 backdrop-blur-xl border-b border-slate-100`}>
+./src/components/layout/Navbar.tsx:235:                        className={`w-full text-left px-5 py-2.5 text-xs font-mono font-bold tracking-widest uppercase hover:bg-slate-50 transition-colors ${currency === c ? 'text-[#705030]' : 'text-slate-600'}`}
+./src/components/layout/Navbar.tsx:578:                                navigate(`/product/${prod.id}`);
+./src/components/layout/Loader.tsx:123:              style={{ width: `${progress}%` }}
+./src/components/layout/Loader.tsx:155:                <stop offset={`${progress}%`} stopColor="#705030" />
+./src/components/layout/Loader.tsx:156:                <stop offset={`${progress}%`} stopColor="#D8D4C9" />
+./src/pages/About.tsx:202:                  className={`w-full text-left p-3 border transition-all flex flex-col justify-center focus:outline-none rounded-none ${activeFiber === fib.id ? 'bg-slate-950 border-slate-950 text-white' : 'bg-white border-slate-200 text-slate-800 hover:border-slate-400'}`}
+./src/pages/About.tsx:204:                  <span className={`text-[9px] font-mono font-bold uppercase tracking-wider ${activeFiber === fib.id ? 'text-amber-400' : 'text-[#705030]'}`}>
+./src/pages/About.tsx:252:                          style={{ width: `${Math.max(10, 100 - (parseFloat(currentFiber.micronRating) * 2.8))}%` }}
+./src/pages/About.tsx:269:                          style={{ width: `${currentFiber.warmthFactor}%` }}
+./src/pages/Shop.tsx:92:              {searchQuery ? `Showing results for "${searchQuery}"` : `Explore our curated selection of ${categoryFilter.toLowerCase()} lifeware.`}
+./src/pages/Shop.tsx:100:              className={`px-4 py-2 text-[10px] font-mono tracking-widest uppercase transition-all duration-300 border ${categoryFilter === 'All' ? 'bg-slate-900 border-slate-900 text-white' : 'bg-transparent border-slate-200 text-slate-500 hover:text-slate-900 hover:border-slate-400'}`}
+./src/pages/Shop.tsx:108:                className={`px-4 py-2 text-[10px] font-mono tracking-widest uppercase transition-all duration-300 border ${categoryFilter === cat ? 'bg-slate-900 border-slate-900 text-white' : 'bg-transparent border-slate-200 text-slate-500 hover:text-slate-900 hover:border-slate-400'}`}
+./src/pages/Shop.tsx:129:                className={`px-3 py-1.5 text-[9px] font-mono tracking-widest uppercase transition-all duration-200 border ${subCategoryFilter === 'All' ? 'bg-amber-100/60 border-amber-300 text-amber-950 font-bold' : 'bg-slate-50/50 border-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-100'}`}
+./src/pages/Shop.tsx:137:                  className={`px-3 py-1.5 text-[9px] font-mono tracking-widest uppercase transition-all duration-200 border ${subCategoryFilter === subCat ? 'bg-amber-100/60 border-amber-300 text-amber-950 font-bold' : 'bg-slate-50/50 border-slate-100 text-slate-500 hover:text-slate-900 hover:bg-slate-100'}`}
+./src/pages/Shop.tsx:151:              <span className="text-[10px] font-mono text-slate-500">${minPrice}</span>
+./src/pages/Shop.tsx:161:              <span className="text-[10px] font-mono text-slate-900 font-bold">${maxPrice}</span>
+./src/pages/ProductDetails.tsx:64:    const compositeId = `${product.id}_${selectedSize || 'OS'}_${selectedColor || 'NoColor'}`;
+./src/pages/ProductDetails.tsx:158:                        className={`group relative flex items-center gap-2.5 px-4 py-2 bg-white border rounded-none transition-all duration-300 ${
+./src/pages/ProductDetails.tsx:201:                      className={`min-w-12 h-12 flex items-center justify-center px-4 border rounded-none text-xs font-mono font-bold transition-all duration-200 ${
+./src/pages/ProductDetails.tsx:230:                  <span className={`w-1.5 h-1.5 rounded-full ${isLowStock ? 'bg-amber-600 animate-pulse' : 'bg-green-600'}`} />
+./src/pages/ProductDetails.tsx:233:                      ? `LIMITED STOCK: ONLY ${stockCount} PIECES LEFT` 
+./src/pages/ProductDetails.tsx:265:                    Add {quantity > 1 ? `(${quantity})` : ''} To Assembly Bag
+./src/pages/ProductDetails.tsx:350:                  className={`py-3 px-4 border-b-2 uppercase font-extrabold transition-all outline-none ${
+./src/pages/ProductDetails.tsx:360:                  className={`py-3 px-4 border-b-2 uppercase font-extrabold transition-all outline-none ${
+./src/pages/ProductDetails.tsx:370:                  className={`py-3 px-4 border-b-2 uppercase font-extrabold transition-all outline-none ${
+./src/pages/ProductDetails.tsx:380:                  className={`py-3 px-4 border-b-2 uppercase font-extrabold transition-all outline-none ${
+./src/pages/ShippingReturns.tsx:26:                  Standard transit is fully absorbed for purchases above $150.
+./src/pages/ShippingReturns.tsx:71:                      <td className="py-4 font-mono font-bold">$15.00 (Comp over $150)</td>
+./src/pages/ShippingReturns.tsx:76:                      <td className="py-4 font-mono font-bold">$35.00 flat rate</td>
+./src/pages/ShippingReturns.tsx:81:                      <td className="py-4 font-mono font-bold">$60.00 flat rate</td>
+./src/pages/FAQ.tsx:101:                    const uniqueKey = `${catIndex}-${itemIndex}`;
+./src/pages/FAQ.tsx:120:                          className={`grid transition-all duration-300 ease-in-out ${
+./src/pages/Checkout.tsx:40:  const savedBillingStr = user ? localStorage.getItem(`wooltown_saved_billing_${user.id}`) : null;
+./src/pages/Checkout.tsx:113:          localStorage.setItem(`wooltown_saved_billing_${user.id}`, JSON.stringify(data));
+./src/pages/Checkout.tsx:117:        const usersOrdersKey = `wooltown_orders_${user.id}`;
+./src/pages/Checkout.tsx:122:          id: `ord_wool_${Math.floor(1000 + Math.random() * 9000)}`,
+./src/pages/Checkout.tsx:125:            id: `oi_${Math.floor(1000 + Math.random() * 9000)}`,
+./src/pages/Checkout.tsx:291:                          const formatted = val.replace(/(\d{4})(?=\d)/g, '$1 ').trim();
+./src/pages/Checkout.tsx:309:                              val = `${val.substring(0, 2)}/${val.substring(2)}`;
+./src/pages/Checkout.tsx:364:                {isSubmitting ? "PROCESSING TRANSACTION..." : `CONFIRM DISPATCH FOR ${formatPrice(finalTotal)}`}
+./src/pages/Home.tsx:413:                  className={`p-4 border rounded-none transition-all duration-300 ${
+./src/pages/Home.tsx:425:                  className={`p-4 border rounded-none transition-all duration-300 ${
+./src/pages/Home.tsx:509:                  animate={{ left: `${(carouselIndex / carouselSlides.length) * 100}%` }}
+./src/pages/Home.tsx:511:                  style={{ width: `${100 / carouselSlides.length}%` }}
+./src/pages/Home.tsx:545:                      className={`w-full text-left py-4 px-6 border transition-all duration-500 rounded-none flex items-center justify-between ${
+./src/pages/Home.tsx:602:                            animate={{ width: `${activeSpec.rating}%` }}
+./src/pages/Home.tsx:640:                  Complimentary worldwide delivery on premium transactions over $150. Tracked instantly.
+./src/pages/Profile.tsx:84:    const usersOrdersKey = `wooltown_orders_${user.id}`;
+./src/pages/Profile.tsx:128:    const userReviewsKey = `wooltown_reviews_${user.id}`;
+./src/pages/Profile.tsx:151:    const savedBillingStr = localStorage.getItem(`wooltown_saved_billing_${user.id}`);
+./src/pages/Profile.tsx:187:    localStorage.setItem(`wooltown_saved_billing_${user.id}`, JSON.stringify(billingData));
+./src/pages/Profile.tsx:205:      localStorage.setItem(`wooltown_orders_${user.id}`, JSON.stringify(updated));
+./src/pages/Profile.tsx:210:    setCancelSuccessMessage(`Order ${orderId} successfully cancelled. Reservations reversed.`);
+./src/pages/Profile.tsx:226:            <strong style="color: #0f172a; font-family: serif; font-size: 14px;">${prod?.name || 'Wooltown Lifeware Piece'}</strong><br/>
+./src/pages/Profile.tsx:227:            <span style="font-size: 11px; color: #64748b; font-family: monospace;">PRODUCT REF: ${item.productId}</span>
+./src/pages/Profile.tsx:230:            ${item.quantity}
+./src/pages/Profile.tsx:233:            ${formatPrice(item.priceAtTime)}
+./src/pages/Profile.tsx:236:            ${formatPrice(item.quantity * item.priceAtTime)}
+./src/pages/Profile.tsx:245:          <title>Wooltown Order Statement - ${order.id}</title>
+./src/pages/Profile.tsx:356:              <strong style="font-size: 13px; color: #010101;">TRANSACTION ID: ${order.id}</strong><br/>
+./src/pages/Profile.tsx:357:              <span style="color: #64748b;">RECORDED: ${new Date(order.createdAt).toLocaleDateString()}</span>
+./src/pages/Profile.tsx:368:              <p>${user.name.toUpperCase()}<br/>${user.email.toUpperCase()}</p>
+./src/pages/Profile.tsx:382:              ${itemsHtml}
+./src/pages/Profile.tsx:389:              <span>${formatPrice(order.total)}</span>
+./src/pages/Profile.tsx:397:              <span>${formatPrice(order.total)}</span>
+./src/pages/Profile.tsx:459:    localStorage.setItem(`wooltown_reviews_${user.id}`, JSON.stringify(updatedReviews));
+./src/pages/Profile.tsx:495:              className={`px-4 py-2 border transition-all ${activeTab === 'orders' ? 'bg-slate-950 border-slate-950 text-white font-bold' : 'bg-transparent border-slate-200 text-slate-500 hover:border-slate-400'}`}
+./src/pages/Profile.tsx:501:              className={`px-4 py-2 border transition-all ${activeTab === 'profile' ? 'bg-slate-950 border-slate-950 text-white font-bold' : 'bg-transparent border-slate-200 text-slate-500 hover:border-slate-400'}`}
+./src/pages/Profile.tsx:507:              className={`px-4 py-2 border transition-all ${activeTab === 'billing' ? 'bg-slate-950 border-slate-950 text-white font-bold' : 'bg-transparent border-slate-200 text-slate-500 hover:border-slate-400'}`}
+./src/pages/Profile.tsx:513:              className={`px-4 py-2 border transition-all ${activeTab === 'reviews' ? 'bg-slate-950 border-slate-950 text-white font-bold' : 'bg-transparent border-slate-200 text-slate-500 hover:border-slate-400'}`}
+./src/pages/Profile.tsx:546:                <span className="font-mono text-slate-900">USD ($)</span>
+./src/pages/Profile.tsx:601:                                <span className={`text-[9px] font-mono uppercase tracking-widest px-2.5 py-1 border ${
+./src/pages/Profile.tsx:670:                                <span className={`w-5 h-5 flex items-center justify-center rounded-full text-[10px] ${order.status === 'PENDING' || order.status === 'PROCESSING' || order.status === 'SHIPPED' || order.status === 'DELIVERED' ? 'bg-slate-900 text-white font-bold' : 'bg-slate-200 text-slate-400'}`}>
+./src/pages/Profile.tsx:677:                                <span className={`w-5 h-5 flex items-center justify-center rounded-full text-[10px] ${order.status === 'PROCESSING' || order.status === 'SHIPPED' || order.status === 'DELIVERED' ? 'bg-slate-900 text-white font-bold' : 'bg-slate-200 text-slate-400'}`}>
+./src/pages/Profile.tsx:684:                                <span className={`w-5 h-5 flex items-center justify-center rounded-full text-[10px] ${order.status === 'SHIPPED' || order.status === 'DELIVERED' ? 'bg-slate-900 text-white font-bold' : 'bg-slate-200 text-slate-400'}`}>
+./src/pages/Profile.tsx:691:                                <span className={`w-5 h-5 flex items-center justify-center rounded-full text-[10px] ${order.status === 'DELIVERED' ? 'bg-slate-900 text-white font-bold' : 'bg-slate-200 text-slate-400'}`}>
+./src/pages/Profile.tsx:713:                                      <h6 className="font-serif text-sm font-normal text-slate-900 hover:text-amber-800 cursor-pointer block" onClick={() => navigate(`/product/${item.productId}`)}>
+./src/pages/Profile.tsx:874:                                    <Star key={idx} className={`w-3.5 h-3.5 ${idx < rev.rating ? 'text-amber-500 fill-amber-500' : 'text-slate-200'}`} />
+./src/pages/Profile.tsx:941:                              {billingCardNumber ? billingCardNumber.replace(/(\d{4})/g, '$1 ').trim() : '•••• •••• •••• ••••'}
+./src/pages/Profile.tsx:1129:                        <Star className={`w-6 h-6 ${idx < newReviewRating ? 'text-amber-500 fill-amber-500' : ''}`} />
+./src/store/currencyStore.ts:22:    USD: '$',
+./src/store/currencyStore.ts:36:      return `${Math.round(convertedPrice).toLocaleString('sv-SE')} kr`;
+./src/lib/mockData.ts:180:        const name = `${brand} ${fit} ${mat} ${noun}`;
+./src/lib/mockData.ts:181:        const desc = `Sourced directly from certified organic collectives, this exceptional piece is crafted from premium ${mat.toLowerCase()}. Finished with a clean ${fit.toLowerCase()} silhouette, embodying our modern heritage.`;
+./src/lib/mockData.ts:197:        const cropFp = `&crop=focalpoint&fp-x=${0.4 + (globalCounter % 3) * 0.1}&fp-y=${0.4 + (globalCounter % 3) * 0.1}&fp-z=${1 + (globalCounter % 2) * 0.2}`;
+./src/lib/mockData.ts:198:        const colorArg = isBw ? '&sat=-100&bri=5' : `&sat=${10 + (globalCounter % 3)*10}`;
+./src/lib/mockData.ts:199:        const finalImage = `https://images.unsplash.com/photo-${rawId}?auto=format${colorArg}${cropFp}&q=80&w=800`;
+./src/lib/mockData.ts:202:            id: `p_gen_${globalCounter}`,
